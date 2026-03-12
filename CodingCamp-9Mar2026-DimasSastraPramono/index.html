@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="time">00:00:00</h1>
+            <p id="date"></p>
+            <h2 id="greeting"></h2>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Focus Timer</h3>
+    <div id="timer">25:00</div>
+    <div class="buttons">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="stopTimer()">Stop</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
+    </div>
+
+    <div class="card">
+        <h3>Tasks</h3>
+        <input id="taskInput" placeholder="Add new task">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <div class="card">
+        <h3>Quick Links</h3>
+        <a href="https://google.com" target="_blank">Google</a>
+        <a href="https://youtube.com" target="_blank">YouTube</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
